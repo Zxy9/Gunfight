@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class Bullet : MonoBehaviour
+public  class Bullet : MonoBehaviour
 {
     // Start is called before the first frame update
-    int Speed;
+    public float speed;
+    public int hitflood;
     void Start()
     {
         
@@ -15,7 +16,16 @@ public abstract class Bullet : MonoBehaviour
     void Update()
     {
         
+        this.transform.position += transform.forward * speed * Time.deltaTime;
     }
-    public abstract void Create();
-
+    //public abstract void Create();
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "enemy")
+        {
+            BulletPool.Instance.CollectObject(this.gameObject);
+            //other.gameObject.GetComponent<Enemy>().flood -= hitflood;
+            //扣血
+        }
+    }
 }

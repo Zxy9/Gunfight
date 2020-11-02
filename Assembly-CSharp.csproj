@@ -204,6 +204,9 @@
     <Compile Include="Assets\Script\Arms\Bullet.cs" />
     <Compile Include="Assets\Script\Arms\Gun.cs" />
     <Compile Include="Assets\Script\Enemy\Enemy.cs" />
+    <Compile Include="Assets\Script\Enemy\Enemy1.cs" />
+    <Compile Include="Assets\Script\Enemy\Enemy2.cs" />
+    <Compile Include="Assets\Script\Enemy\Enemy3.cs" />
     <Compile Include="Assets\Script\GameControl\AnimatorControl.cs" />
     <Compile Include="Assets\Script\GameControl\AudioControl.cs" />
     <Compile Include="Assets\Script\GameControl\GameSetting.cs" />

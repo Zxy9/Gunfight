@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    int Blood;
+    public int Blood;
     // Start is called before the first frame update
     void Start()
     {

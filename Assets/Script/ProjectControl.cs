@@ -5,9 +5,14 @@ using UnityEngine;
 public class ProjectControl : MonoBehaviour
 {
     // Start is called before the first frame update
+    Player player;
+    AnimatorControl animatorControl;
+    
     void Start()
     {
-        
+        player = GetComponent<Player>();
+        animatorControl = GetComponent<AnimatorControl>();
+            
     }
 
     // Update is called once per frame
@@ -16,8 +21,11 @@ public class ProjectControl : MonoBehaviour
         
     }
     void PlayerDeathDetection()//主角死亡检测
-    { 
-
+    {
+        if (player.Blood <= 0)
+        {
+            animatorControl.Play();
+        }
     }
     void EnemyIntrusionDetection()//敌人入侵地球检测
     { 
@@ -25,7 +33,7 @@ public class ProjectControl : MonoBehaviour
     }
     void VictoryDetection()
     { 
-    
+        
     }
     void FailDetection()
     {

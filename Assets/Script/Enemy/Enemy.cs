@@ -4,7 +4,7 @@ using UnityEngine;
 
 abstract class Enemy : MonoBehaviour
 {
-    int blood;
+    public int blood;
     int Hit;
     int MoveSpeed;
     // Start is called before the first frame update
@@ -12,7 +12,6 @@ abstract class Enemy : MonoBehaviour
     {
         
     }
-
     // Update is called once per frame
     void Update()
     {

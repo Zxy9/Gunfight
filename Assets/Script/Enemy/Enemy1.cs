@@ -20,16 +20,12 @@ using UnityEngine;
     {
         
     }
-    public override void Attack()
-    {
-        Bullet bullet = GetComponent<Bullet>();
-        bullet.Create();
 
-    }
+
     public override void Move()
     {
         Vector3 vector3 = new Vector3(0, Time.deltaTime * MoveSpeed, 0);
-        rigidbody.velocity = vector3;
-
+        rigidbody.velocity = vector3; 
+        
     }
 }

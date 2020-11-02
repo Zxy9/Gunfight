@@ -202,6 +202,7 @@
     <Compile Include="Assets\HTC.UnityPlugin\ViveInputUtility\Scripts\ViveRole\ViveRoleProperty.cs" />
     <Compile Include="Assets\HTC.UnityPlugin\ViveInputUtility\Scripts\ViveRole\ViveRoleSetter.cs" />
     <Compile Include="Assets\Script\Arms\Bullet.cs" />
+    <Compile Include="Assets\Script\Arms\BulletPool.cs" />
     <Compile Include="Assets\Script\Arms\Gun.cs" />
     <Compile Include="Assets\Script\Enemy\Enemy.cs" />
     <Compile Include="Assets\Script\Enemy\Enemy1.cs" />

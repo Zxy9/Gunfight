@@ -2,23 +2,30 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public  class Bullet : MonoBehaviour
+public class Bullet : MonoBehaviour
 {
     // Start is called before the first frame update
     public float speed;
     public int hitflood;
+    public GameObject bulletgameobject;
+         
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
         this.transform.position += transform.forward * speed * Time.deltaTime;
     }
     //public abstract void Create();
+    public void Create()
+    {
+        BulletPool.Instance.CreateObject("bullet", bulletgameobject, null, this.transform.position,this.transform.rotation,this.gameObject.name);
+
+    }
     void OnTriggerEnter(Collider other)
     {
         if (other.tag == "enemy")

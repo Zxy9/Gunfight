@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using HTC.UnityPlugin.Vive;
 using UnityEngine.Playables;
+using Boo.Lang;
 
 public class Player : MonoBehaviour
 {
@@ -24,7 +25,13 @@ public class Player : MonoBehaviour
             Debug.Log("射线检测到的物体名称: " + hit.transform.name);
             if (ViveInput.GetPressDownEx(HandRole.RightHand, ControllerButton.Trigger) )     //检测手柄
             {
-
+                Gun gun = transform.GetChild(1).GetComponent<Gun>();
+                gun.BulletCreate();
+            }
+            if (ViveInput.GetPressDownEx(HandRole.LeftHand, ControllerButton.Trigger))     //检测手柄
+            {
+                Gun gun = transform.GetChild(2).GetComponent<Gun>();
+                gun.BulletCreate();
             }
 
         }

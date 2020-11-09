@@ -21,7 +21,13 @@ using UnityEngine;
         
     }
 
+    public override void Attack()
+    {
 
+        Gun gun = GetComponent<Gun>();
+        gun.BulletCreate();
+
+    }
     public override void Move()
     {
         Vector3 vector3 = new Vector3(0, Time.deltaTime * MoveSpeed, 0);

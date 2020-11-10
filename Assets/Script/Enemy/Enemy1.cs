@@ -9,7 +9,7 @@ using UnityEngine;
     int Hit;
     int MoveSpeed;
     Rigidbody rigidbody;
-  
+    
     void Start()
     {
         rigidbody = GetComponent<Rigidbody>();
@@ -23,10 +23,8 @@ using UnityEngine;
 
     public override void Attack()
     {
-
         Gun gun = GetComponent<Gun>();
         gun.BulletCreate();
-
     }
     public override void Move()
     {

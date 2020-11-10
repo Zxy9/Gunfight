@@ -25,7 +25,7 @@ public class GunFactory:MonoBehaviour
 
         }
     }
-    public void ShootMutiple(float ShootSpeedMutiple, float HitMutiple)
+    public void ShootMutiple(float ShootSpeedMutiple, int HitMutiple)
     {
         BulletPrefab.GetComponent<BulletTemp>().speed = BulletPrefab.GetComponent<BulletTemp>().speed * ShootSpeedMutiple;
         BulletPrefab.GetComponent<BulletTemp>().hurtValue =BulletPrefab.GetComponent<BulletTemp>().hurtValue * HitMutiple;

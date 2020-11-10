@@ -2,8 +2,6 @@
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <LangVersion>latest</LangVersion>
-    <CscToolPath>C:\Program Files\Unity\Hub\Editor\2019.4.11f1\Editor\Data\Tools\RoslynScripts</CscToolPath>
-    <CscToolExe>unity_csc.bat</CscToolExe>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -11,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{7FB77AD3-8703-9CD3-F48B-49B222A3BCB0}</ProjectGuid>
+    <ProjectGuid>{EAF828EC-62FE-12CB-5C52-D9FA83935A7E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
@@ -53,6 +51,9 @@
     <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
     <UnityVersion>2019.4.11f1</UnityVersion>
   </PropertyGroup>
+  <ItemGroup>
+    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
+  </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2019.4.11f1\Editor\Data\Managed/UnityEngine/UnityEngine.dll</HintPath>
@@ -292,13 +293,13 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.11f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
-      <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/15.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
+      <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/16.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
     <Reference Include="Valve.Newtonsoft.Json">
-      <HintPath>E:/VRAR项目/work4/Assets/SteamVR/Input/Plugins/JSON.NET/Valve.Newtonsoft.Json.dll</HintPath>
+      <HintPath>E:/GitHub/Gunfight/Assets/SteamVR/Input/Plugins/JSON.NET/Valve.Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
-      <HintPath>E:/VRAR项目/work4/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
+      <HintPath>E:/GitHub/Gunfight/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.11f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
@@ -655,62 +656,62 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unityscript/Boo.Lang.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.TestRunner">
-      <HintPath>E:/VRAR项目/work4/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
+      <HintPath>E:/GitHub/Gunfight/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TestRunner">
-      <HintPath>E:/VRAR项目/work4/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
+      <HintPath>E:/GitHub/Gunfight/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>E:/VRAR项目/work4/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>E:/GitHub/Gunfight/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>E:/VRAR项目/work4/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>E:/GitHub/Gunfight/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>E:/VRAR项目/work4/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>E:/GitHub/Gunfight/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>E:/VRAR项目/work4/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>E:/GitHub/Gunfight/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>E:/VRAR项目/work4/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>E:/GitHub/Gunfight/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>E:/VRAR项目/work4/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>E:/GitHub/Gunfight/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>E:/VRAR项目/work4/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>E:/GitHub/Gunfight/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>E:/VRAR项目/work4/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>E:/GitHub/Gunfight/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>E:/VRAR项目/work4/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>E:/GitHub/Gunfight/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{27C5F40F-6D7A-4029-1C19-E8D84C9C3C60}</Project>
+      <Project>{711D85FE-6CCA-E6DA-3D8E-AEA7815D7899}</Project>
       <Name>Assembly-CSharp</Name>
     </ProjectReference>
     <ProjectReference Include="SteamVR_Actions.csproj">
-      <Project>{EFEBDF29-D2A0-6BF2-2210-B2B665F6F0CE}</Project>
+      <Project>{4BE447D0-7B8D-0563-2276-3EF6BEE425C0}</Project>
       <Name>SteamVR_Actions</Name>
     </ProjectReference>
     <ProjectReference Include="SteamVR_Input_Editor.csproj">
-      <Project>{BEF169F6-7624-1EE4-0D27-35F0D174D4B4}</Project>
+      <Project>{EE04F0A6-7443-EEB5-03E0-E81F36FBA633}</Project>
       <Name>SteamVR_Input_Editor</Name>
     </ProjectReference>
     <ProjectReference Include="SteamVR_Editor.csproj">
-      <Project>{C8B36D2A-9559-5992-3F5F-D2B6B299A0D2}</Project>
+      <Project>{C270F734-4933-DAD9-32C2-75462DCF8B5A}</Project>
       <Name>SteamVR_Editor</Name>
     </ProjectReference>
     <ProjectReference Include="SteamVR.csproj">
-      <Project>{7524E17E-9A30-EB0D-9F0F-EBDEE1B79C8F}</Project>
+      <Project>{11093929-5F66-9399-B388-19ED1A20681D}</Project>
       <Name>SteamVR</Name>
     </ProjectReference>
     <ProjectReference Include="SteamVR_Windows_EditorHelper.csproj">
-      <Project>{372894D3-7DCB-DD08-5FBC-E68D0FCCF962}</Project>
+      <Project>{ADE929D3-25C6-9992-6858-BF09D298D4E3}</Project>
       <Name>SteamVR_Windows_EditorHelper</Name>
     </ProjectReference>
   </ItemGroup>

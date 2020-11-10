@@ -7,12 +7,11 @@ public class ProjectControl : MonoBehaviour
     // Start is called before the first frame update
     Player player;
     AnimatorControl animatorControl;
-    
+    int EnemyCount = 10;
     void Start()
     {
         player = GetComponent<Player>();
         animatorControl = GetComponent<AnimatorControl>();
-            
     }
 
     // Update is called once per frame
@@ -41,7 +40,7 @@ public class ProjectControl : MonoBehaviour
     }
     void EnemyCreate()
     { 
-    
+        
     }
 
 

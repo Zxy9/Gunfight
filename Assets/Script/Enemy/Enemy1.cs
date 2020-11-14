@@ -23,8 +23,8 @@ using UnityEngine;
 
     public override void Attack()
     {
-        Gun gun = GetComponent<Gun>();
-        gun.BulletCreate();
+        GetComponent<Bullet>().Create();
+        
     }
     public override void Move()
     {

@@ -108,3 +108,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 20
   hitflood: 0
+  bulletgameobject: {fileID: 9043372868299185412}

@@ -11,6 +11,8 @@ public class Player : MonoBehaviour
     public GameObject GameUI;
     AnimatorControl animatorc;
     public bool Isdie = false;
+    public Gun LeftGun;
+    public Gun RightGun;
     void Start()
     {
 
@@ -40,13 +42,12 @@ public class Player : MonoBehaviour
         }
         if (ViveInput.GetPressDownEx(HandRole.RightHand, ControllerButton.Trigger) && !GameUI.activeSelf)     //右手发射子弹
         {
-            Gun gun = transform.GetChild(1).GetComponent<Gun>();
-            gun.BulletCreate();
+
+            RightGun.BulletCreate();
         }
         if (ViveInput.GetPressDownEx(HandRole.LeftHand, ControllerButton.Trigger) && !GameUI.activeSelf)     //左手发射子弹
         {
-            Gun gun = transform.GetChild(1).GetComponent<Gun>();
-            gun.BulletCreate();
+            LeftGun.BulletCreate();
 
         }
         if (Blood <= 0)

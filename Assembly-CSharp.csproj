@@ -211,16 +211,10 @@
     <Compile Include="Assets\HTC.UnityPlugin\ViveInputUtility\Scripts\ViveRole\ViveRoleMapHandler.cs" />
     <Compile Include="Assets\HTC.UnityPlugin\ViveInputUtility\Scripts\ViveRole\ViveRoleProperty.cs" />
     <Compile Include="Assets\HTC.UnityPlugin\ViveInputUtility\Scripts\ViveRole\ViveRoleSetter.cs" />
-    <Compile Include="Assets\Scenes\GunFactory\BulletTemp.cs" />
-    <Compile Include="Assets\Scenes\GunFactory\Gun1.cs" />
-    <Compile Include="Assets\Scenes\GunFactory\Gun2.cs" />
-    <Compile Include="Assets\Scenes\GunFactory\Gun3.cs" />
-    <Compile Include="Assets\Scenes\GunFactory\GunFactory.cs" />
-    <Compile Include="Assets\Scenes\GunFactory\ProFactory.cs" />
-    <Compile Include="Assets\Scenes\GunFactory\PropFactory.cs" />
     <Compile Include="Assets\Script\Arms\Bullet.cs" />
     <Compile Include="Assets\Script\Arms\BulletPool.cs" />
     <Compile Include="Assets\Script\Arms\Gun.cs" />
+    <Compile Include="Assets\Script\Arms\GunUIController.cs" />
     <Compile Include="Assets\Script\Enemy\Enemy.cs" />
     <Compile Include="Assets\Script\Enemy\Enemy1.cs" />
     <Compile Include="Assets\Script\Enemy\Enemy2.cs" />

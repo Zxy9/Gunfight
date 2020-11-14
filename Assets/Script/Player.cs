@@ -43,11 +43,11 @@ public class Player : MonoBehaviour
         if (ViveInput.GetPressDownEx(HandRole.RightHand, ControllerButton.Trigger) && !GameUI.activeSelf)     //右手发射子弹
         {
 
-            RightGun.BulletCreate();
+            RightGun.Shoot();
         }
         if (ViveInput.GetPressDownEx(HandRole.LeftHand, ControllerButton.Trigger) && !GameUI.activeSelf)     //左手发射子弹
         {
-            LeftGun.BulletCreate();
+            LeftGun.Shoot();
 
         }
         if (Blood <= 0)

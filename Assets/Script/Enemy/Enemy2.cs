@@ -23,7 +23,7 @@ class Enemy2 : Enemy
     public override void Attack()
     {
         Gun gun = GetComponent<Gun>();
-        gun.BulletCreate();
+        gun.Shoot();
 
     }
     public override void Move()

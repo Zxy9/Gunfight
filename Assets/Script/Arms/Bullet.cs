@@ -8,24 +8,38 @@ public class Bullet : MonoBehaviour
 
     public float speed ;
     public int hitflood ;
-
+    
+    
     void Start()
     {
-        
-     }
+
+        Debug.Log("创建子弹");
+        StartCoroutine(TimeDown());
+        Debug.Log("等待几秒之后");
+        //BulletPool.Instance.CollectObject(this.gameObject);
+        Debug.Log("回收子弹");
+
+
+
+    }
+   
 
     // Update is called once per frame
     void Update()
     {
 
         this.transform.position += transform.forward * speed * Time.deltaTime;
-       
+        //Debug.Log("wozaiupdate");
+        //StartCoroutine(TimeDown());
+        //Debug.Log("等待几秒之后");
+        //BulletPool.Instance.CollectObject(this.gameObject);
+        //Debug.Log("回收子弹");
     }
     //public abstract void Create();
     public  void Create()
     {
        // BulletPool.Instance.CreateObject("bullet", bulletgameobject, null, this.transform.position,this.transform.rotation,this.gameObject.name);
-
+     
     }
     void OnTriggerEnter(Collider other)
     {
@@ -36,16 +50,12 @@ public class Bullet : MonoBehaviour
             //other.gameObject.GetComponent<Enemy>().flood -= hitflood;
             //扣血
         }
-        else
-        {
-           
-            TimeDown();
-            BulletPool.Instance.CollectObject(this.gameObject);
-            
-        }
+       
     }
     IEnumerator TimeDown()
     {
         yield return new WaitForSeconds(2);
+        BulletPool.Instance.CollectObject(this.gameObject);
     }
+
 }

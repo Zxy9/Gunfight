@@ -20,11 +20,12 @@ public class GunFactory:MonoBehaviour
         if (Input.GetKeyDown(KeyCode.J))
         {
            
-            Debug.Log("12222");
+            
             //GameObject bullet = Instantiate(BulletPrefab, Vector3.zero, Quaternion.identity) as GameObject;
             //BulletPrefab.GetComponent<Bullet>().Create();
             BulletPool.Instance.CreateObject("bullet", BulletPrefab, null, this.transform.position, this.transform.rotation,"Bullet");
-            Debug.Log("2");
+            
+
 
         }
     }
@@ -33,4 +34,5 @@ public class GunFactory:MonoBehaviour
         BulletPrefab.GetComponent<Bullet>().speed = BulletPrefab.GetComponent<Bullet>().speed * ShootSpeedMutiple;
         BulletPrefab.GetComponent<Bullet>().hitflood =BulletPrefab.GetComponent<Bullet>().hitflood * HitMutiple;
     }
+  
 }

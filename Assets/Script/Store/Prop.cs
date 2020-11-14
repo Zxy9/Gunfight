@@ -7,6 +7,7 @@ public abstract class Prop : MonoBehaviour
 {
     // Start is called before the first frame update
     int Price;//道具的价钱
+
     void Start()
     {
         
@@ -18,4 +19,11 @@ public abstract class Prop : MonoBehaviour
         
     }
     public abstract void Function();
+    
+    public void Defense()
+    {
+        
+    }
+    
+
 }

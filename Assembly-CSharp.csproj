@@ -214,7 +214,6 @@
     <Compile Include="Assets\Script\Arms\Bullet.cs" />
     <Compile Include="Assets\Script\Arms\BulletPool.cs" />
     <Compile Include="Assets\Script\Arms\Gun.cs" />
-    <Compile Include="Assets\Script\Arms\GunUIController.cs" />
     <Compile Include="Assets\Script\Enemy\Enemy.cs" />
     <Compile Include="Assets\Script\Enemy\Enemy1.cs" />
     <Compile Include="Assets\Script\Enemy\Enemy2.cs" />

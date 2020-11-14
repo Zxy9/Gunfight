@@ -16,11 +16,10 @@ public class Gun:MonoBehaviour
     }
     public void Update()
     {
-        if (GunUIController.Instance.Count > 0)
-        {
+       
             Shoot();
 
-        }
+        
     }
     public  void Shoot()
     {
@@ -30,8 +29,7 @@ public class Gun:MonoBehaviour
             invokeTime += Time.deltaTime;
             if (invokeTime - currentTime > 0)
             {
-                BulletPool.Instance.CreateObject("bullet", BulletPrefab, null, this.transform.position, this.transform.rotation, "Bullet");
-                GunUIController.Instance.AutoAdd();
+                BulletPool.Instance.CreateObject("bullet", BulletPrefab, null, this.transform.position, this.transform.rotation, "Bullet");   
                 invokeTime = 0;
             }
         }

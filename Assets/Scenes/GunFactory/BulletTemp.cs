@@ -7,7 +7,7 @@ using UnityEngine;
 {
       
     public  float speed;
-    public  float hurtValue;
+    public  int hurtValue;
     void Start()
     {
 
@@ -21,10 +21,10 @@ using UnityEngine;
     }
     private void OnCollisionEnter(Collision collision)
     {
-        Character tempCharacter = collision.collider.GetComponent<Character>();
+        Player tempCharacter = collision.collider.GetComponent<Player>();
         if (tempCharacter != null)
         {
-            tempCharacter.blood -= hurtValue;
+            tempCharacter.Blood-= hurtValue;
             Destroy(gameObject);
         }
        

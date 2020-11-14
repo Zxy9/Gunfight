@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class Gun : MonoBehaviour
+public  class Gun : MonoBehaviour
 {
     // Start is called before the first frame update
     int Hit;
@@ -17,6 +17,10 @@ public abstract class Gun : MonoBehaviour
     {
         
     }
-    public abstract void BulletCreate();
+    public  virtual void BulletCreate()
+    {
+        Bullet bullet = new Bullet();
+        bullet.Create();
+    }
     
 }

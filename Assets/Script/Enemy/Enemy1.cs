@@ -9,7 +9,7 @@ using UnityEngine;
     int Hit;
     int MoveSpeed;
     Rigidbody rigidbody;
-  
+    
     void Start()
     {
         rigidbody = GetComponent<Rigidbody>();
@@ -21,7 +21,11 @@ using UnityEngine;
         
     }
 
-
+    public override void Attack()
+    {
+        GetComponent<Bullet>().Create();
+        
+    }
     public override void Move()
     {
         Vector3 vector3 = new Vector3(0, Time.deltaTime * MoveSpeed, 0);

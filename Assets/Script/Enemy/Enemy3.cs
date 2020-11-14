@@ -22,8 +22,8 @@ class Enemy3 : Enemy
     }
     public override void Attack()
     {
-        Bullet bullet = GetComponent<Bullet>();
-        bullet.Create();
+        Gun gun = GetComponent<Gun>();
+        gun.BulletCreate();
 
     }
     public override void Move()

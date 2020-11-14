@@ -2,30 +2,30 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ProjectControl : MonoBehaviour
+public class ProjectControl : UnitySingle<ProjectControl>
 {
     // Start is called before the first frame update
-    Player player;
+    public Player player;
     AnimatorControl animatorControl;
-    
+    public int EnemyCount = 10;
+    public static int EnemyInCount=0;
+    public static int Money = 0;
+    public int MaxIntrusionCount = 5;
     void Start()
     {
-        player = GetComponent<Player>();
-        animatorControl = GetComponent<AnimatorControl>();
-            
+        
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (player.Isdie == true)
+            PlayerDeathDetection();
     }
-    void PlayerDeathDetection()//主角死亡检测
+    void PlayerDeathDetection()//主角死亡
     {
-        if (player.Blood <= 0)
-        {
-            animatorControl.Play();
-        }
+        
     }
     void EnemyIntrusionDetection()//敌人入侵地球检测
     { 
@@ -41,7 +41,7 @@ public class ProjectControl : MonoBehaviour
     }
     void EnemyCreate()
     { 
-    
+        
     }
 
 

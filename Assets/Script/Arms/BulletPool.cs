@@ -16,8 +16,8 @@ public class BulletPool :UnitySingle<BulletPool>
         }
         else
         {
-            tempGameObject = pGameObject;
-            Add(pKey, pGameObject);
+            tempGameObject = Instantiate(pGameObject, Vector3.zero, Quaternion.identity) as GameObject; 
+            Add(pKey, tempGameObject);
         }
         tempGameObject.transform.parent = pParent;
         tempGameObject.transform.localPosition = plocalPosition;

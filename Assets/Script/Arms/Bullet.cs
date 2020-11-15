@@ -8,7 +8,7 @@ public class Bullet : MonoBehaviour
 
     public float speed ;
     public int hitflood ;
-    Rigidbody rigidbody;
+   
 
     void Start()
     {
@@ -31,7 +31,7 @@ public class Bullet : MonoBehaviour
     //public abstract void Create();
     public  void Create()
     {
-       // BulletPool.Instance.CreateObject("bullet", bulletgameobject, null, this.transform.position,this.transform.rotation,this.gameObject.name);
+        BulletPool.Instance.CreateObject("bullet", this.gameObject, null, this.transform.position,this.transform.rotation,this.gameObject.name);
      
     }
     void OnTriggerEnter(Collider other)

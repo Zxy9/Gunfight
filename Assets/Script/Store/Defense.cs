@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class Prop : MonoBehaviour
+public  class Defense : MonoBehaviour
 {
     // Start is called before the first frame update
     int Price;//道具的价钱
@@ -11,17 +11,18 @@ public abstract class Prop : MonoBehaviour
     void Start()
     {
         Destroy(this.gameObject, 15);
-        PlayerBlood = GetComponent<Player>().Blood;
+        PlayerBlood = GameObject.Find("VR").GetComponent<Player>().Blood;
+
     }
 
     // Update is called once per frame
     void Update()
     {
-       
-        GetComponent<Player>().Blood = PlayerBlood;
+
+        GameObject.Find("VR").GetComponent<Player>().Blood = PlayerBlood;
 
     }
-    public abstract void Function();
+   // public  void Function();
     
     //IEnumerator Defense()
     //{

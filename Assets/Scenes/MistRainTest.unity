@@ -1408,11 +1408,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc7eaf8fc8bf1834f8ecff44758bcf12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentTime: 0
   Blood: 2000
   GameUI: {fileID: 94007622}
   Isdie: 0
-  LeftGun: {fileID: 0}
-  RightGun: {fileID: 0}
+  LeftGun: {fileID: 7231988993041959978, guid: 90d806a882ef1374f82926919de14101, type: 3}
+  RightGun: {fileID: 7231988993041959978, guid: 90d806a882ef1374f82926919de14101,
+    type: 3}
 --- !u!1 &1631527408
 GameObject:
   m_ObjectHideFlags: 0
@@ -1488,11 +1490,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc7eaf8fc8bf1834f8ecff44758bcf12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Blood: 100
+  currentTime: 0
+  Blood: 1000
   GameUI: {fileID: 94007622}
   Isdie: 0
-  LeftGun: {fileID: 0}
-  RightGun: {fileID: 0}
+  LeftGun: {fileID: 7231988993041959978, guid: 90d806a882ef1374f82926919de14101, type: 3}
+  RightGun: {fileID: 7231988993041959978, guid: 90d806a882ef1374f82926919de14101,
+    type: 3}
 --- !u!1 &1846905420
 GameObject:
   m_ObjectHideFlags: 0

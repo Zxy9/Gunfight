@@ -15,7 +15,7 @@ class Enemy : MonoBehaviour
     void Start()
     {
         Earth = GameObject.Find("EA");
-        Move();
+       // Move();
     }
     // Update is called once per frame
     void Update()

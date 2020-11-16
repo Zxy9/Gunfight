@@ -9,7 +9,7 @@ public class Bullet : MonoBehaviour
     public float speed ;
     public int hitflood ;
     Rigidbody rigidbody;
-
+    public GameObject enemycollider;
     void Start()
     {
 
@@ -34,11 +34,11 @@ public class Bullet : MonoBehaviour
        // BulletPool.Instance.CreateObject("bullet", bulletgameobject, null, this.transform.position,this.transform.rotation,this.gameObject.name);
      
     }
-    void OnTriggerEnter(Collider other)
+    public virtual void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "enemy")
-        {
-           
+
+        if(other.gameObject==enemycollider)
+        { 
             BulletPool.Instance.CollectObject(this.gameObject);
             other.gameObject.GetComponent<Enemy>().blood -= hitflood;
             //扣血

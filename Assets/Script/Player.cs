@@ -7,6 +7,7 @@ using UnityEngine.Playables;
 
 public class Player : MonoBehaviour
 {
+  
     public int Blood;
     public GameObject GameUI;
     AnimatorControl animatorc;
@@ -15,7 +16,7 @@ public class Player : MonoBehaviour
     public Gun RightGun;
     void Start()
     {
-
+       
         animatorc = GetComponent<AnimatorControl>();
         Isdie = false;
     }
@@ -40,16 +41,19 @@ public class Player : MonoBehaviour
             }
 
         }
-        if (ViveInput.GetPressDownEx(HandRole.RightHand, ControllerButton.Trigger) && !GameUI.activeSelf)     //右手发射子弹
-        {
+        
+        //移动至Gun中发射子弹
+        //if (ViveInput.GetPressDownEx(HandRole.RightHand, ControllerButton.Trigger) && !GameUI.activeSelf)     //右手发射子弹
+        //{
 
-            RightGun.BulletCreate();
-        }
-        if (ViveInput.GetPressDownEx(HandRole.LeftHand, ControllerButton.Trigger) && !GameUI.activeSelf)     //左手发射子弹
-        {
-            LeftGun.BulletCreate();
+        //    RightGun.Shoot();
+        //}
 
-        }
+        //if (ViveInput.GetPressDownEx(HandRole.LeftHand, ControllerButton.Trigger) && !GameUI.activeSelf)     //左手发射子弹
+        //{
+        //    LeftGun.Shoot();
+
+        //}
         if (Blood <= 0)
         {
             Die();

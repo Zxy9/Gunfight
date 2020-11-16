@@ -62,6 +62,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModuleAudio.cs" />
+    <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModulePhysics.cs" />
+    <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModulePhysics2D.cs" />
+    <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModuleSprite.cs" />
+    <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModuleUI.cs" />
+    <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModuleUnityVersion.cs" />
+    <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModuleUtils.cs" />
+    <Compile Include="Assets\Demigiant\DOTweenPro\DOTweenAnimation.cs" />
+    <Compile Include="Assets\Demigiant\DOTweenPro\DOTweenProShortcuts.cs" />
+    <Compile Include="Assets\Demigiant\DOTweenPro\DOTweenTextMeshPro.cs" />
+    <Compile Include="Assets\Demigiant\DOTweenPro\DOTweenTk2d.cs" />
     <Compile Include="Assets\HTC.UnityPlugin\ColliderEvent\ColliderEventCaster.cs" />
     <Compile Include="Assets\HTC.UnityPlugin\ColliderEvent\ColliderEventData.cs" />
     <Compile Include="Assets\HTC.UnityPlugin\ColliderEvent\ColliderEventInterfaces.cs" />
@@ -223,7 +234,11 @@
     <Compile Include="Assets\Script\RayIn.cs" />
     <Compile Include="Assets\Script\Store\Prop.cs" />
     <Compile Include="Assets\Script\UnitySingle.cs" />
+    <None Include="Assets\Demigiant\readme_DOTweenPro.txt" />
     <None Include="Assets\HTC.UnityPlugin\ViveInputUtility\changelog.txt" />
+    <None Include="Assets\Demigiant\DOTweenPro\readme.txt" />
+    <None Include="Assets\Demigiant\DemiLib\Core\DemiLib.xml" />
+    <None Include="Assets\Demigiant\DOTween\readme.txt" />
     <None Include="Assets\HTC.UnityPlugin\ViveInputUtility\Resources\Unlit-AlphaWithFade.shader" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
@@ -408,8 +423,17 @@
     <Reference Include="UnityEditor">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.11f1/Editor/Data/Managed/UnityEditor.dll</HintPath>
     </Reference>
+    <Reference Include="DemiLib">
+      <HintPath>E:/VRAR项目/work4/Assets/Demigiant/DemiLib/Core/DemiLib.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween">
+      <HintPath>E:/VRAR项目/work4/Assets/Demigiant/DOTween/DOTween.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTweenPro">
+      <HintPath>E:/VRAR项目/work4/Assets/Demigiant/DOTweenPro/DOTweenPro.dll</HintPath>
+    </Reference>
     <Reference Include="Valve.Newtonsoft.Json">
-      <HintPath>E:/VRAR/work4/Assets/SteamVR/Input/Plugins/JSON.NET/Valve.Newtonsoft.Json.dll</HintPath>
+      <HintPath>E:/VRAR项目/work4/Assets/SteamVR/Input/Plugins/JSON.NET/Valve.Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.11f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
@@ -766,31 +790,31 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unityscript/Boo.Lang.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>E:/VRAR/work4/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>E:/VRAR项目/work4/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>E:/VRAR/work4/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>E:/VRAR项目/work4/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>E:/VRAR/work4/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>E:/VRAR项目/work4/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>E:/VRAR/work4/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>E:/VRAR项目/work4/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>E:/VRAR/work4/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>E:/VRAR项目/work4/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>E:/VRAR/work4/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>E:/VRAR项目/work4/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>E:/VRAR/work4/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>E:/VRAR项目/work4/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>E:/VRAR/work4/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>E:/VRAR项目/work4/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>E:/VRAR/work4/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>E:/VRAR项目/work4/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

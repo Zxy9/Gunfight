@@ -22,7 +22,12 @@ class Enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (blood == 0)
+        {
+            ProjectControl.Money++;
+            Destroy(gameObject);
+
+        }
     }
     public  void Attack()
     {

@@ -35,6 +35,7 @@ public class Player : MonoBehaviour
             }
             if (ViveInput.GetPressDownEx(HandRole.LeftHand,ControllerButton.Menu))     //左手上的UI开关
             {
+                Debug.Log("menu");
                 GameUI.SetActive(!GameUI.activeSelf);
             }
 

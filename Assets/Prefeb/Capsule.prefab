@@ -142,3 +142,4 @@ MonoBehaviour:
   MoveSpeed1: 50
   MoveSpeed2: 20
   AttackPoint: {fileID: 695213206883903022}
+  lable: 3

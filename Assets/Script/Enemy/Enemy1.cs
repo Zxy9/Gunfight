@@ -7,7 +7,7 @@ using UnityEngine;
     // Start is called before the first frame update
     
     
-    int lable = 1;
+    public new int lable = 1;
 
 
 

@@ -31,7 +31,8 @@ public class Gun:MonoBehaviour
         //    invokeTime += Time.deltaTime;
         //    if (invokeTime - currentTime > 0)
         //    {
-              BulletPrefab.GetComponent<Bullet>().Create();
+        BulletPool.Instance.CreateObject("bullet", BulletPrefab, null, this.transform.position, this.transform.rotation, BulletPrefab.name);
+        //BulletPrefab.GetComponent<Bullet>().Create();
         //        // BulletPool.Instance.CreateObject("bullet", BulletPrefab, null, this.transform.position, this.transform.rotation, "Bullet");   
         //        invokeTime = 0;
         //    }

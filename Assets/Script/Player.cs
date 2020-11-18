@@ -13,6 +13,7 @@ public class Player : MonoBehaviour
     public bool Isdie = false;
     public Gun LeftGun;
     public Gun RightGun;
+    float CT;//计算射速
     void Start()
     {
 
@@ -42,8 +43,12 @@ public class Player : MonoBehaviour
         }
         if (ViveInput.GetPressEx(HandRole.RightHand, ControllerButton.Trigger) && !GameUI.activeSelf)     //右手发射子弹
         {
-
-            RightGun.Shoot();
+            CT+=Time.deltaTime;
+            if (CT >= RightGun.currentTime)
+            {
+                RightGun.Shoot();
+                CT =0;
+            }
         }
         if (ViveInput.GetPressEx(HandRole.LeftHand, ControllerButton.Trigger) && !GameUI.activeSelf)     //左手发射子弹
         {

@@ -10,7 +10,7 @@ class Enemy : MonoBehaviour
     
     public GameObject AttackPoint;
     GameObject Earth;
-    int lable=0;
+    public  int lable=0;
     
     
     // Start is called before the first frame update
@@ -26,7 +26,6 @@ class Enemy : MonoBehaviour
         {
             ProjectControl.Money++;
             Destroy(gameObject);
-
         }
     }
     public  void Attack()

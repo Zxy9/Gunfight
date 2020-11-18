@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -10,6 +11,8 @@ public class Bullet : MonoBehaviour
     public int hitflood ;
     Rigidbody rigidbody;
     public GameObject enemycollider;
+    //public GameObject target;
+   
     void Start()
     {
 
@@ -31,14 +34,19 @@ public class Bullet : MonoBehaviour
     //public abstract void Create();
     public  void Create()
     {
-       // BulletPool.Instance.CreateObject("bullet", bulletgameobject, null, this.transform.position,this.transform.rotation,this.gameObject.name);
+        //var angle = Math.Atan2(target.transform.position.y - transform.position.y, target.transform.position.x - transform.position.x);
+        //var theta = angle * (180 / Math.PI);
+        
+        //Quaternion qua = Quaternion.Euler(transform.TransformDirection(Vector3.forward));
+        //BulletPool.Instance.CreateObject("bullet", gameObject, null, this.transform.position, this.transform.rotation,gameObject.name);
      
     }
     public virtual void OnTriggerEnter(Collider other)
     {
 
-        if(other.gameObject==enemycollider)
-        { 
+        if(other.gameObject.GetComponent<Enemy>().lable==1)
+        {
+            Debug.Log("111");
             BulletPool.Instance.CollectObject(this.gameObject);
             other.gameObject.GetComponent<Enemy>().blood -= hitflood;
             //扣血

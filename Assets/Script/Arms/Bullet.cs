@@ -11,6 +11,7 @@ public class Bullet : MonoBehaviour
     public int hitflood ;
     Rigidbody rigidbody;
     public GameObject enemycollider;
+    public int bulletlable;
     //public GameObject target;
    
     void Start()
@@ -44,7 +45,7 @@ public class Bullet : MonoBehaviour
     public virtual void OnTriggerEnter(Collider other)
     {
 
-        if(other.gameObject.GetComponent<Enemy>().lable==1)
+        if(other.gameObject.GetComponent<Enemy>().lable==bulletlable)
         {
             Debug.Log("111");
             BulletPool.Instance.CollectObject(this.gameObject);

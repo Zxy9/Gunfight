@@ -5,31 +5,12 @@ using UnityEngine;
  class  Enemy1 : Enemy
 {
     // Start is called before the first frame update
-    public int Blood;
-    int Hit;
-    int MoveSpeed;
-    Rigidbody rigidbody;
     
-    void Start()
-    {
-        rigidbody = GetComponent<Rigidbody>();
-    }
+    
+    int lable = 1;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
-    public override void Attack()
-    {
-        GetComponent<Bullet>().Create();
-        
-    }
-    public override void Move()
-    {
-        Vector3 vector3 = new Vector3(0, Time.deltaTime * MoveSpeed, 0);
-        rigidbody.velocity = vector3; 
-        
-    }
+
+
+  
 }

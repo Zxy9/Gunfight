@@ -19,8 +19,8 @@ public class Bullet : MonoBehaviour
 
       
         StartCoroutine(TimeDown());
-       
 
+        rigidbody = GetComponent<Rigidbody>();
 
     }
    
@@ -28,9 +28,10 @@ public class Bullet : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        
+        //rigidbody.velocity = transform.forward * speed;
         this.transform.position += transform.forward * speed * Time.deltaTime;
-      
+
     }
     //public abstract void Create();
     public  void Create()

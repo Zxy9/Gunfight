@@ -37,7 +37,7 @@ public class ProjectControl : UnitySingle<ProjectControl>
         j += Time.deltaTime; 
         if (j>=i)
         {
-            GameObject.Instantiate(Enemy[Random.Range(0,3)], new Vector3(Random.Range(-40, 40), Random.Range(-20, 20), 80), transform.rotation);
+            GameObject.Instantiate(Enemy[Random.Range(0,1)], new Vector3(Random.Range(-40, 40), Random.Range(-20, 20), 80), transform.rotation);
             EnemyCount++;//现有敌人数量+1
             j = 0;
         }

@@ -107,7 +107,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2332a4c28fe34184dbf62346344210ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 300
+  speed: 100
   hitflood: 100
   enemycollider: {fileID: 1390454898635331223, guid: b9a49682e2c6abb4db6b5fddce82faff,
     type: 3}

@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 143069415111016057}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 3, z: 6.15}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -107,8 +107,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2332a4c28fe34184dbf62346344210ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 8
-  hitflood: 8
+  speed: 100
+  hitflood: 100
+  enemycollider: {fileID: 1390454898635331223, guid: b9a49682e2c6abb4db6b5fddce82faff,
+    type: 3}
+  bulletlable: 1
 --- !u!54 &-2284862048213175977
 Rigidbody:
   m_ObjectHideFlags: 0

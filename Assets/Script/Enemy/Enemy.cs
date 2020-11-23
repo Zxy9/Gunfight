@@ -5,40 +5,48 @@ using DG.Tweening;
 class Enemy : MonoBehaviour
 {
     public int blood;
-    int Hit;
-    int MoveSpeed;
-    Rigidbody rigidbody;
+    public int MoveSpeed1;
+    public int MoveSpeed2;
+    
     public GameObject AttackPoint;
     GameObject Earth;
+    public  int lable=0;
+    
     
     // Start is called before the first frame update
     void Start()
-    {
-        Earth = GameObject.Find("EA");
-       // Move();
+    {   
+        Earth = GameObject.Find("EA").transform.GetChild(0).gameObject;
+        Move();
     }
     // Update is called once per frame
     void Update()
     {
-        
-    }
-    public virtual void Attack()
-    {
-        AttackPoint.GetComponent<Bullet>().Create();
-
-    }
-
-    public virtual void Move()
-    {
-        transform.DOMove(Earth.transform.position, 3);//移动到地球中心
-    }
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.transform.tag == "Earth")
+        if (blood == 0)
         {
-
-            ProjectControl.EnemyInCount++;
+            ProjectControl.Money++;
             Destroy(gameObject);
         }
     }
+    public  void Attack()
+    {
+        AttackPoint.GetComponent<Bullet>().Create();
+    }
+    
+    public  void Move()
+    {
+        transform.DOMove((transform.position-Earth.transform.position)/3, 100 / MoveSpeed1);
+       
+        transform.DOMove(Earth.transform.position, 100 / MoveSpeed2)
+            .SetDelay(3)
+            .OnComplete(()=>
+            {
+                ProjectControl.EnemyInCount++;
+                Destroy(gameObject);
+            }
+            );
+        
+    }
+
+   
 }

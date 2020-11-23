@@ -7,118 +7,61 @@ using UnityEngine.Playables;
 
 public class Player : MonoBehaviour
 {
-    // 弹幕间隔时间
-    public float currentTime ;
-    // 弹幕计时
-    private float invokeTime;
     public int Blood;
     public GameObject GameUI;
     AnimatorControl animatorc;
     public bool Isdie = false;
-    public GameObject LeftGun;
-    public GameObject RightGun;
-    //public Gun LeftGun;
-    //public Gun RightGun;
+    public Gun[] LeftGun;
+    public Gun[] RightGun;
+    public int GunNumber=0;
+    float CT;//计算射速
     void Start()
     {
-        
-        currentTime = LeftGun.GetComponent<Gun>().currentTime;
-        invokeTime = currentTime;
+
         animatorc = GetComponent<AnimatorControl>();
         Isdie = false;
     }
     void Update()
     {
-
-        // StartCoroutine(cutblood());
-
-        if (Input.GetKey(KeyCode.Z))
+        if (GunNumber >=RightGun.Length)
         {
-            Blood--;
+            GunNumber = 0;
         }
-        Debug.Log(Blood);
-        //射线检测
-        RaycastHit hit;
-        Vector3 fwd = transform.TransformDirection(Vector3.forward);
-        if (Physics.Raycast(transform.position, fwd, out hit, 10000))
-        {
-            Debug.DrawLine(transform.position, hit.point, Color.red);
-          
-            if (ViveInput.GetPressDownEx(HandRole.RightHand, ControllerButton.PadTouch) && hit.transform.tag == "Story")     //按下菜单键并且射线指向商店
-            {
-                Debug.Log("打开商店");
-
-            }
-            if (VivePose.IsValidEx(HandRole.LeftHand) && VivePose.IsValidEx(TrackerRole.Tracker1))     //左手上的UI开关
-            {
+         if (ViveInput.GetPressDownEx(HandRole.LeftHand,ControllerButton.Menu))     //左手上的UI开关
+         {
+                Debug.Log("menu");
                 GameUI.SetActive(!GameUI.activeSelf);
-
-            }
-
-        }
-
-        //移动至Gun中发射子弹
-        //if (ViveInput.GetPressDownEx(HandRole.RightHand, ControllerButton.Trigger) && !GameUI.activeSelf)     //右手发射子弹
-        //{
-
-        //    RightGun.Shoot();
-        //}
-
-        //if (ViveInput.GetPressDownEx(HandRole.LeftHand, ControllerButton.Trigger) && !GameUI.activeSelf)     //左手发射子弹
-        //{
-        //    LeftGun.Shoot();
-
-        //}
-
-        if (ViveInput.GetPressEx(HandRole.RightHand, ControllerButton.Trigger) /*&& !GetComponent<Player>().GameUI.activeSelf*/)  //右手发射子弹 (Input.GetKey(KeyCode.Z)) 
+         }
+        if (ViveInput.GetPressEx(HandRole.RightHand, ControllerButton.Trigger) && !GameUI.activeSelf)     //右手发射子弹
         {
-            invokeTime += Time.deltaTime;
-            if (invokeTime - currentTime > 0)
+            CT+=Time.deltaTime;
+            if (CT >= RightGun[GunNumber].currentTime)
             {
-                RightGun.GetComponent<Gun>().Shoot();
-               
-
-                // BulletPool.Instance.CreateObject("bullet", BulletPrefab, null, this.transform.position, this.transform.rotation, "Bullet");   
-                invokeTime = 0;
+                RightGun[GunNumber].Shoot();
+                CT =0;
             }
         }
-
-        if (ViveInput.GetPressUpEx(HandRole.RightHand, ControllerButton.Trigger) /*&& !GetComponent<Player>().GameUI.activeSelf*/)     //右手发射子弹 Input.GetKeyUp(KeyCode.Z)
+        if (ViveInput.GetPressEx(HandRole.LeftHand, ControllerButton.Trigger) && !GameUI.activeSelf)     //左手发射子弹
         {
-            invokeTime = currentTime;
-        }
-
-        
-
-        if (ViveInput.GetPressEx(HandRole.LeftHand, ControllerButton.Trigger)/*&& !GetComponent<Player>().GameUI.activeSelf*/)     //左手发射子弹 Input.GetKey(KeyCode.M)
-        {
-            invokeTime += Time.deltaTime;
-            if (invokeTime - currentTime > 0)
+            CT += Time.deltaTime;
+            if (CT >= LeftGun[GunNumber].currentTime)
             {
-                LeftGun.GetComponent<Gun>().Shoot();
-                //BulletPool.Instance.CreateObject("bullet", BulletPrefab, null, this.transform.position, this.transform.rotation, "Bullet");
-                invokeTime = 0;
+                LeftGun[GunNumber].Shoot();
+                CT = 0;
             }
-        }
 
-        if (ViveInput.GetPressUpEx(HandRole.LeftHand, ControllerButton.Trigger)/*&& !GetComponent<Player>().GameUI.activeSelf*/)     //左手发射子弹 Input.GetKeyUp(KeyCode.M)
-        {
-            invokeTime = currentTime;
         }
         if (Blood <= 0)
         {
             Die();
         }
-    }
-    public void Die()
+      
+
+        }
+        public void Die()
     {
         Isdie = true;
         animatorc.Play();
 
-    }
-    IEnumerator cutblood()
-    {
-        yield return new WaitForSeconds(2);
-        Blood--;
     }
 }

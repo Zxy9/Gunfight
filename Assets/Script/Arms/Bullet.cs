@@ -42,6 +42,7 @@ public class Bullet : MonoBehaviour
             BulletPool.Instance.CollectObject(this.gameObject);
             other.gameObject.GetComponent<Enemy>().blood -= hitflood;
             //扣血
+            
         }
        
     }

@@ -13,6 +13,7 @@ public class Bullet : MonoBehaviour
     public GameObject enemycollider;
     public int bulletlable;
     //public GameObject target;
+    float BoomTime=0;
    
     void Start()
     {
@@ -28,7 +29,7 @@ public class Bullet : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+     
         //rigidbody.velocity = transform.forward * speed;
         this.transform.position += transform.forward * speed * Time.deltaTime;
 
@@ -46,7 +47,7 @@ public class Bullet : MonoBehaviour
     public virtual void OnTriggerEnter(Collider other)
     {
 
-        if(other.gameObject.GetComponent<Enemy>().lable==bulletlable)
+        if(other.tag=="enemy"&&other.GetComponent<Enemy>().lable==bulletlable)
         {
             Debug.Log("111");
             BulletPool.Instance.CollectObject(this.gameObject);

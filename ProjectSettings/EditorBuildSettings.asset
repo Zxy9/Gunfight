@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MistRainTest 1.unity
+    guid: cf67a63fc7afec240a6e864993dd027a
   m_configObjects: {}

@@ -32,7 +32,7 @@ class Enemy : MonoBehaviour
     {
         AttackPoint.GetComponent<Bullet>().Create();
     }
-
+    
     public  void Move()
     {
         transform.DOMove((transform.position-Earth.transform.position)/3, 100 / MoveSpeed1);

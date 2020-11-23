@@ -19,7 +19,7 @@ public class ProjectControl : UnitySingle<ProjectControl>
     float j=0;//用于计算每个敌人出现时间
     float w = 0;//用于计算狂暴敌人出现时间
     float End = 0;//计算结束时间
-    float i = 1;//每个敌人出现的时间
+    float i = 2;//每个敌人出现的时间
 
     void Start()
     {
@@ -37,14 +37,14 @@ public class ProjectControl : UnitySingle<ProjectControl>
         j += Time.deltaTime; 
         if (j>=i)
         {
-            GameObject.Instantiate(Enemy[Random.Range(0,3)], new Vector3(Random.Range(-40, 40), Random.Range(-20, 20), 80), transform.rotation);
+            GameObject.Instantiate(Enemy[Random.Range(0,1)], new Vector3(Random.Range(-40, 40), Random.Range(-20, 20), 80), transform.rotation);
             EnemyCount++;//现有敌人数量+1
             j = 0;
         }
         w += Time.deltaTime;
         if (w >= 10)//狂暴时间
         {
-            i = 0.4f;//缩短敌人刷新时间
+            i = 1;//缩短敌人刷新时间
             if (w >= 20)//狂暴持续时间
             {
                 w = 0;//重置狂暴时间

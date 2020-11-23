@@ -11,8 +11,10 @@ public class Player : MonoBehaviour
     public GameObject GameUI;
     AnimatorControl animatorc;
     public bool Isdie = false;
-    public Gun LeftGun;
-    public Gun RightGun;
+    public Gun[] LeftGun;
+    public Gun[] RightGun;
+    public int GunNumber=0;
+    float CT;//计算射速
     void Start()
     {
 
@@ -21,33 +23,32 @@ public class Player : MonoBehaviour
     }
     void Update()
     {
-        //射线检测
-        RaycastHit hit;
-        Vector3 fwd = transform.TransformDirection(Vector3.forward);
-        if (Physics.Raycast(transform.position, fwd, out hit, 10000))
+        if (GunNumber >=RightGun.Length)
         {
-            Debug.DrawLine(transform.position, hit.point, Color.red);
-          
-            if (ViveInput.GetPressDownEx(HandRole.RightHand, ControllerButton.PadTouch) && hit.transform.tag == "Story")     //按下菜单键并且射线指向商店
-            {
-                Debug.Log("打开商店");
-
-            }
-            if (ViveInput.GetPressDownEx(HandRole.LeftHand,ControllerButton.Menu))     //左手上的UI开关
-            {
+            GunNumber = 0;
+        }
+         if (ViveInput.GetPressDownEx(HandRole.LeftHand,ControllerButton.Menu))     //左手上的UI开关
+         {
                 Debug.Log("menu");
                 GameUI.SetActive(!GameUI.activeSelf);
-            }
-
-        }
+         }
         if (ViveInput.GetPressEx(HandRole.RightHand, ControllerButton.Trigger) && !GameUI.activeSelf)     //右手发射子弹
         {
-
-            RightGun.Shoot();
+            CT+=Time.deltaTime;
+            if (CT >= RightGun[GunNumber].currentTime)
+            {
+                RightGun[GunNumber].Shoot();
+                CT =0;
+            }
         }
         if (ViveInput.GetPressEx(HandRole.LeftHand, ControllerButton.Trigger) && !GameUI.activeSelf)     //左手发射子弹
         {
-            LeftGun.Shoot();
+            CT += Time.deltaTime;
+            if (CT >= LeftGun[GunNumber].currentTime)
+            {
+                LeftGun[GunNumber].Shoot();
+                CT = 0;
+            }
 
         }
         if (Blood <= 0)

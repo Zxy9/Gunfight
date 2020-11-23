@@ -112,6 +112,7 @@ MonoBehaviour:
   MoveSpeed1: 50
   MoveSpeed2: 20
   AttackPoint: {fileID: 6733614668658901115}
+  lable: 2
 --- !u!1 &6733614668658901115
 GameObject:
   m_ObjectHideFlags: 0

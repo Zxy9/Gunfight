@@ -6,9 +6,6 @@ using UnityEngine;
 {
     // Start is called before the first frame update
     
-    
-    int lable = 1;
-
 
 
 

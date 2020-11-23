@@ -5,9 +5,6 @@ using UnityEngine;
 class Enemy2 : Enemy
 {
     // Start is called before the first frame update
-   
-    int lable = 2;
-
 
  
 }

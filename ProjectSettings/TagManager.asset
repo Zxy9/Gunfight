@@ -9,6 +9,7 @@ TagManager:
   - FxTemporaire
   - Earth
   - Hand
+  - LeftHand
   layers:
   - Default
   - TransparentFX

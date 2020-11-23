@@ -7,7 +7,6 @@ class Enemy : MonoBehaviour
     public int blood;
     public int MoveSpeed1;
     public int MoveSpeed2;
-    
     public GameObject AttackPoint;
     GameObject Earth;
     public  int lable=0;

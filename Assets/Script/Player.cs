@@ -15,6 +15,7 @@ public class Player : MonoBehaviour
     public Gun[] RightGun;
     public int GunNumber=0;
     float CT;//计算射速
+    public int UseBulletCount = 0;
     void Start()
     {
 
@@ -32,21 +33,23 @@ public class Player : MonoBehaviour
                 Debug.Log("menu");
                 GameUI.SetActive(!GameUI.activeSelf);
          }
-        if (ViveInput.GetPressEx(HandRole.RightHand, ControllerButton.Trigger) && !GameUI.activeSelf)     //右手发射子弹
+        if (ViveInput.GetPressEx(HandRole.RightHand, ControllerButton.Trigger) /*&& !GameUI.activeSelf*/)     //右手发射子弹
         {
             CT+=Time.deltaTime;
             if (CT >= RightGun[GunNumber].currentTime)
             {
                 RightGun[GunNumber].Shoot();
+                UseBulletCount++;
                 CT =0;
             }
         }
-        if (ViveInput.GetPressEx(HandRole.LeftHand, ControllerButton.Trigger) && !GameUI.activeSelf)     //左手发射子弹
+        if (ViveInput.GetPressEx(HandRole.LeftHand, ControllerButton.Trigger) /*&& !GameUI.activeSelf*/)     //左手发射子弹
         {
             CT += Time.deltaTime;
             if (CT >= LeftGun[GunNumber].currentTime)
             {
                 LeftGun[GunNumber].Shoot();
+                UseBulletCount++;
                 CT = 0;
             }
 

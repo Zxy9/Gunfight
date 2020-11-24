@@ -260,11 +260,15 @@
     <Compile Include="Assets\Script\Enemy\Enemy3.cs" />
     <Compile Include="Assets\Script\GameControl\AnimatorControl.cs" />
     <Compile Include="Assets\Script\GameControl\AudioControl.cs" />
+    <Compile Include="Assets\Script\GameControl\CountUp.cs" />
     <Compile Include="Assets\Script\GameControl\FadeIn.cs" />
     <Compile Include="Assets\Script\GameControl\GameSetting.cs" />
+    <Compile Include="Assets\Script\GameControl\LoadManager.cs" />
+    <Compile Include="Assets\Script\GameControl\LoadingSlice.cs" />
+    <Compile Include="Assets\Script\GameControl\Movie.cs" />
     <Compile Include="Assets\Script\GameControl\ScenesControl.cs" />
-    <Compile Include="Assets\Script\Movie.cs" />
     <Compile Include="Assets\Script\Player.cs" />
+    <Compile Include="Assets\Script\PosDirection.cs" />
     <Compile Include="Assets\Script\ProjectControl.cs" />
     <Compile Include="Assets\Script\RayIn.cs" />
     <Compile Include="Assets\Script\Store\CleanEnemy.cs" />

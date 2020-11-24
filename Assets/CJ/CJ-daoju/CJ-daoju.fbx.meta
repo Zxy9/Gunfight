@@ -1,0 +1,233 @@
+fileFormatVersion: 2
+guid: 413f4dd336564791f9b5997811f9f946
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: daoju
+    100004: daoju 1
+    100006: daoju 10
+    100008: daoju 11
+    100010: daoju 12
+    100012: daoju 13
+    100014: daoju 14
+    100016: daoju 15
+    100018: daoju 16
+    100020: daoju 17
+    100022: daoju 2
+    100024: daoju 3
+    100026: daoju 4
+    100028: daoju 5
+    100030: daoju 6
+    100032: daoju 7
+    100034: daoju 8
+    100036: daoju 9
+    100038: daoju_low
+    100040: dj00
+    100042: dj018
+    100044: dj019
+    100046: dj02
+    100048: dj030
+    100050: dj031
+    100052: dj032
+    100054: dj033
+    100056: dj034
+    100058: dj035
+    100060: dj039
+    100062: dj04
+    100064: dj040
+    100066: dj041
+    100068: dj042
+    100070: dj05
+    100072: dj07
+    100074: dj08
+    100076: Main Camera
+    100078: Render
+    100080: Sky
+    400000: //RootNode
+    400002: daoju
+    400004: daoju 1
+    400006: daoju 10
+    400008: daoju 11
+    400010: daoju 12
+    400012: daoju 13
+    400014: daoju 14
+    400016: daoju 15
+    400018: daoju 16
+    400020: daoju 17
+    400022: daoju 2
+    400024: daoju 3
+    400026: daoju 4
+    400028: daoju 5
+    400030: daoju 6
+    400032: daoju 7
+    400034: daoju 8
+    400036: daoju 9
+    400038: daoju_low
+    400040: dj00
+    400042: dj018
+    400044: dj019
+    400046: dj02
+    400048: dj030
+    400050: dj031
+    400052: dj032
+    400054: dj033
+    400056: dj034
+    400058: dj035
+    400060: dj039
+    400062: dj04
+    400064: dj040
+    400066: dj041
+    400068: dj042
+    400070: dj05
+    400072: dj07
+    400074: dj08
+    400076: Main Camera
+    400078: Render
+    400080: Sky
+    2300000: dj00
+    2300002: dj018
+    2300004: dj019
+    2300006: dj02
+    2300008: dj030
+    2300010: dj031
+    2300012: dj032
+    2300014: dj033
+    2300016: dj034
+    2300018: dj035
+    2300020: dj039
+    2300022: dj04
+    2300024: dj040
+    2300026: dj041
+    2300028: dj042
+    2300030: dj05
+    2300032: dj07
+    2300034: dj08
+    3300000: dj00
+    3300002: dj018
+    3300004: dj019
+    3300006: dj02
+    3300008: dj030
+    3300010: dj031
+    3300012: dj032
+    3300014: dj033
+    3300016: dj034
+    3300018: dj035
+    3300020: dj039
+    3300022: dj04
+    3300024: dj040
+    3300026: dj041
+    3300028: dj042
+    3300030: dj05
+    3300032: dj07
+    3300034: dj08
+    4300000: dj02
+    4300002: dj04
+    4300004: dj05
+    4300006: dj07
+    4300008: dj08
+    4300010: dj00
+    4300012: dj018
+    4300014: dj019
+    4300016: dj030
+    4300018: dj031
+    4300020: dj032
+    4300022: dj033
+    4300024: dj034
+    4300026: dj035
+    4300028: dj039
+    4300030: dj040
+    4300032: dj041
+    4300034: dj042
+    9500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: daoju
+    second: {fileID: 2100000, guid: 88029bfc5114fce90a48e29ef23b9ea9, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 1
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

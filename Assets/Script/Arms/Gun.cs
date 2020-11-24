@@ -5,14 +5,12 @@ using UnityEngine;
 
 public class Gun:MonoBehaviour
 {
-   // public GameObject effectPrefab;
     // 弹幕间隔时间
     public float currentTime = 0.1f;
     // 弹幕计时
     //private float invokeTime;
     public GameObject BulletPrefab;//不同子弹设置不同的伤害值，将子弹作为预制体
-   
-   
+
     void Start()
     {
         
@@ -32,9 +30,8 @@ public class Gun:MonoBehaviour
         //    invokeTime += Time.deltaTime;
         //    if (invokeTime - currentTime > 0)
         //    {
+
         BulletPool.Instance.CreateObject("bullet", BulletPrefab, null, this.transform.position, this.transform.rotation, BulletPrefab.name);
-        
-       // effectPrefab.SetActive(true);
         //BulletPrefab.GetComponent<Bullet>().Create();
         //        // BulletPool.Instance.CreateObject("bullet", BulletPrefab, null, this.transform.position, this.transform.rotation, "Bullet");   
         //        invokeTime = 0;

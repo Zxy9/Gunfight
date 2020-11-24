@@ -14,6 +14,9 @@ public class Bullet : MonoBehaviour
     public int bulletlable;
     //public GameObject target;
     float BoomTime=0;
+    public GameObject HitEffect;//碰撞特效
+    public AudioClip ExplosionClip;
+
    
     void Start()
     {
@@ -53,7 +56,8 @@ public class Bullet : MonoBehaviour
             BulletPool.Instance.CollectObject(this.gameObject);
             other.gameObject.GetComponent<Enemy>().blood -= hitflood;
             //扣血
-            
+            AudioSource.PlayClipAtPoint(ExplosionClip, transform.position);
+            GameObject.Instantiate(HitEffect);
         }
        
     }
@@ -61,7 +65,7 @@ public class Bullet : MonoBehaviour
     {
         yield return new WaitForSeconds(4);
         BulletPool.Instance.CollectObject(this.gameObject);
-        Debug.Log("我走了，别想我");
+       /// Debug.Log("我走了，别想我");
     }
 
 }

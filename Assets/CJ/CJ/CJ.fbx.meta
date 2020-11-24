@@ -1,0 +1,190 @@
+fileFormatVersion: 2
+guid: a9a9477c482fb0c44dbb9ca37aba8bcc
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: ccj00
+    100002: ccj01
+    100004: ccj02
+    100006: ccj05
+    100008: ccj06
+    100010: ccj07
+    100012: ccj08
+    100014: ccj09
+    100016: ccj10
+    100018: che
+    100020: che 1
+    100022: che 2
+    100024: //RootNode
+    100026: cj_low
+    100028: di
+    100030: ding
+    100032: ding 1
+    100034: Main Camera
+    100036: Render
+    100038: Sky
+    100040: zhoulang
+    100042: zhoulang 1
+    100044: zhoulang 2
+    400000: ccj00
+    400002: ccj01
+    400004: ccj02
+    400006: ccj05
+    400008: ccj06
+    400010: ccj07
+    400012: ccj08
+    400014: ccj09
+    400016: ccj10
+    400018: che
+    400020: che 1
+    400022: che 2
+    400024: //RootNode
+    400026: cj_low
+    400028: di
+    400030: ding
+    400032: ding 1
+    400034: Main Camera
+    400036: Render
+    400038: Sky
+    400040: zhoulang
+    400042: zhoulang 1
+    400044: zhoulang 2
+    2300000: ccj00
+    2300002: ccj01
+    2300004: ccj02
+    2300006: ccj05
+    2300008: ccj06
+    2300010: ccj07
+    2300012: ccj08
+    2300014: ccj09
+    2300016: ccj10
+    3300000: ccj00
+    3300002: ccj01
+    3300004: ccj02
+    3300006: ccj05
+    3300008: ccj06
+    3300010: ccj07
+    3300012: ccj08
+    3300014: ccj09
+    3300016: ccj10
+    4300000: ccj00
+    4300002: ccj01
+    4300004: ccj02
+    4300006: ccj05
+    4300008: ccj06
+    4300010: ccj07
+    4300012: ccj08
+    4300014: ccj09
+    4300016: ccj10
+    9500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: che
+    second: {fileID: 2100000, guid: eb92f39cebaa779c03e463b4b875e4f9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: che1
+    second: {fileID: 2100000, guid: 34bc5d288335b428a13757c4bcf7e4ef, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: di
+    second: {fileID: 2100000, guid: 544af218c329218aa4e4cd8a47bfb01e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ding
+    second: {fileID: 2100000, guid: 37fc94e510ce95d883c9eddbc2d5ce8b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: zhoulang
+    second: {fileID: 2100000, guid: cb10ce74865b5c1ac0bde28a68d8d81d, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 1
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.01
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

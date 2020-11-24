@@ -8,6 +8,8 @@ public class PosDirection : MonoBehaviour
     public GameObject Particlefeb;
     Vector3 actorXZ;
     Vector3 ParticlefebXZ;
+    public Animator KaimenA;
+    public GameObject warningG;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,7 +21,8 @@ public class PosDirection : MonoBehaviour
     {
         if (ReachPos() == true)
         {
-            Debug.Log("222");
+            KaimenA.enabled = true;
+            warningG.SetActive(true);
         }
       
     }

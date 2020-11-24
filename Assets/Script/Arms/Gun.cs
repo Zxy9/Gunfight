@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class Gun:MonoBehaviour
 {
+   // public GameObject effectPrefab;
     // 弹幕间隔时间
     public float currentTime = 0.1f;
     // 弹幕计时
@@ -32,6 +33,8 @@ public class Gun:MonoBehaviour
         //    if (invokeTime - currentTime > 0)
         //    {
         BulletPool.Instance.CreateObject("bullet", BulletPrefab, null, this.transform.position, this.transform.rotation, BulletPrefab.name);
+        
+       // effectPrefab.SetActive(true);
         //BulletPrefab.GetComponent<Bullet>().Create();
         //        // BulletPool.Instance.CreateObject("bullet", BulletPrefab, null, this.transform.position, this.transform.rotation, "Bullet");   
         //        invokeTime = 0;

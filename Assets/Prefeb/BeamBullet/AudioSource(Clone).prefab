@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1762377414296294225
+--- !u!1 &3237020996801819704
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,9 +8,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 374905456508905428}
-  - component: {fileID: 1013981362875826149}
-  - component: {fileID: 5028811455363046709}
+  - component: {fileID: 8617125176015228750}
+  - component: {fileID: 6988575307328437156}
+  - component: {fileID: 4746201769246727894}
   m_Layer: 0
   m_Name: AudioSource(Clone)
   m_TagString: Untagged
@@ -18,41 +18,41 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!4 &374905456508905428
+--- !u!4 &8617125176015228750
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1762377414296294225}
+  m_GameObject: {fileID: 3237020996801819704}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.8307395, y: 2.4772246, z: 3.3797946}
+  m_LocalPosition: {x: 5.54, y: 0, z: 1.12}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!82 &1013981362875826149
+--- !u!82 &6988575307328437156
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1762377414296294225}
+  m_GameObject: {fileID: 3237020996801819704}
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 15a3211a3c389664a94d401850cad8c7, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 0.8071995
-  m_Pitch: 0.98743623
+  m_audioClip: {fileID: 8300000, guid: efa34f6c791b62249aea6d9dbfbd1087, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.95703804
+  m_Pitch: 0.8005817
   Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 0
-  MinDistance: 20
+  MinDistance: 50
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
@@ -128,13 +128,13 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
---- !u!114 &5028811455363046709
+--- !u!114 &4746201769246727894
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1762377414296294225}
+  m_GameObject: {fileID: 3237020996801819704}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: af19da7458dc9174699d0b34f404eafc, type: 3}

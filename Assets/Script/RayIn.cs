@@ -7,7 +7,7 @@ using UnityEngine.Playables;
 public class RayIn : MonoBehaviour
 {
     public bool Right;
-  
+
     void Start()
     {
 
@@ -51,15 +51,14 @@ public class RayIn : MonoBehaviour
            
             if (Right)
             {
-                if ( hit.transform.tag == "enemy" && hit.transform.GetComponent<Enemy>().lable == 1)     //检测手柄
+                if ( hit.transform.tag == "enemy" && hit.transform.GetComponent<Enemy>().lable == 2)     //检测手柄
                 {
                     hit.transform.GetComponent<Enemy>().blood -= 25;
-                   
                 }
             }
             else
             {
-                if ( hit.transform.tag == "enemy" && hit.transform.GetComponent<Enemy>().lable == 1)     //检测手柄
+                if ( hit.transform.tag == "enemy" && hit.transform.GetComponent<Enemy>().lable == 2)     //检测手柄
                 {
                     hit.transform.GetComponent<Enemy>().blood -= 25;
                 }

@@ -7,10 +7,10 @@ public class ProjectControl : UnitySingle<ProjectControl>
 {
     // Start is called before the first frame update
     public Player player;
-    AnimatorControl animatorVictory;
-    public GameObject VictoryInterface;
-    AnimatorControl animatorFail;
-    public GameObject FailInterface;
+
+    //public GameObject VictoryInterface;
+
+    //public GameObject FailInterface;
     public int EnemyCount=0;//现有敌人数量
     public static int EnemyInCount=0;
     public int EnemyInMax = 10;//基地最大入侵敌人数量
@@ -37,18 +37,18 @@ public class ProjectControl : UnitySingle<ProjectControl>
         j += Time.deltaTime; 
         if (j>=i)
         {
-            GameObject.Instantiate(Enemy[Random.Range(1,2)], new Vector3(Random.Range(-40, 40), Random.Range(-20, 20), 80), transform.rotation);
+            GameObject.Instantiate(Enemy[Random.Range(0,2)], new Vector3(Random.Range(-10, 10), Random.Range(0, 15), 30), transform.rotation);
             EnemyCount++;//现有敌人数量+1
             j = 0;
         }
         w += Time.deltaTime;
-        if (w >= 10)//狂暴时间
+        if (w >= 30)//狂暴时间
         {
-            i = 1;//缩短敌人刷新时间
-            if (w >= 20)//狂暴持续时间
+            i = 1.5f;//缩短敌人刷新时间
+            if (w >= 40)//狂暴持续时间
             {
                 w = 0;//重置狂暴时间
-                i = 1;//重置敌人刷新时间
+                i = 2;//重置敌人刷新时间
             }
         }
         End += Time.deltaTime;
@@ -69,12 +69,12 @@ public class ProjectControl : UnitySingle<ProjectControl>
     void Victory()
     {
         //animatorVictory.Play();
-        VictoryInterface.SetActive(true);
+        //VictoryInterface.SetActive(true);
     }
     void Fail()
     {
         //animatorFail.Play();
-        FailInterface.SetActive(true);
+        //FailInterface.SetActive(true);
     }
 
 

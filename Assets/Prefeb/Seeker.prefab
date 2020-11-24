@@ -9662,8 +9662,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2332a4c28fe34184dbf62346344210ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
-  hitflood: 0
+  speed: 100
+  hitflood: 50
   enemycollider: {fileID: 0}
   bulletlable: 0
   HitEffect: {fileID: 100010, guid: 762a17aff08aa1f40ac72b27c15fe2d1, type: 3}

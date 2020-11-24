@@ -1,0 +1,170 @@
+fileFormatVersion: 2
+guid: ab27f317262aa79f86027ec8b83b03af
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Main Camera
+    100002: Render
+    100004: Sky
+    100006: //RootNode
+    100008: zc
+    100010: zc 1
+    100012: zc 2
+    100014: zc 3
+    100016: zc 4
+    100018: zc 5
+    100020: zc 6
+    100022: zc 7
+    100024: zc 8
+    100026: zc01
+    100028: zc02
+    100030: zc03
+    100032: zc04
+    100034: zc05
+    100036: zc06
+    100038: zc07
+    100040: zc08
+    100042: zc09
+    100044: "\u5EA7\u8231"
+    400000: Main Camera
+    400002: Render
+    400004: Sky
+    400006: //RootNode
+    400008: zc
+    400010: zc 1
+    400012: zc 2
+    400014: zc 3
+    400016: zc 4
+    400018: zc 5
+    400020: zc 6
+    400022: zc 7
+    400024: zc 8
+    400026: zc01
+    400028: zc02
+    400030: zc03
+    400032: zc04
+    400034: zc05
+    400036: zc06
+    400038: zc07
+    400040: zc08
+    400042: zc09
+    400044: "\u5EA7\u8231"
+    2300000: zc01
+    2300002: zc02
+    2300004: zc03
+    2300006: zc04
+    2300008: zc05
+    2300010: zc06
+    2300012: zc07
+    2300014: zc08
+    2300016: zc09
+    3300000: zc01
+    3300002: zc02
+    3300004: zc03
+    3300006: zc04
+    3300008: zc05
+    3300010: zc06
+    3300012: zc07
+    3300014: zc08
+    3300016: zc09
+    4300000: zc01
+    4300002: zc02
+    4300004: zc03
+    4300006: zc04
+    4300008: zc05
+    4300010: zc06
+    4300012: zc07
+    4300014: zc08
+    4300016: zc09
+    9500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: zc
+    second: {fileID: 2100000, guid: ad7b993f87c642066ee1d093c4ef8350, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 1
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

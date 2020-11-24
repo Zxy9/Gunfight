@@ -255,11 +255,11 @@
     <Compile Include="Assets\Script\Arms\BulletAny.cs" />
     <Compile Include="Assets\Script\Arms\BulletPool.cs" />
     <Compile Include="Assets\Script\Arms\Gun.cs" />
+    <Compile Include="Assets\Script\Arms\RayIn.cs" />
     <Compile Include="Assets\Script\Enemy\Enemy.cs" />
     <Compile Include="Assets\Script\Enemy\Enemy1.cs" />
     <Compile Include="Assets\Script\Enemy\Enemy2.cs" />
     <Compile Include="Assets\Script\Enemy\Enemy3.cs" />
-    <Compile Include="Assets\Script\GameControl\AnimatorControl.cs" />
     <Compile Include="Assets\Script\GameControl\AudioControl.cs" />
     <Compile Include="Assets\Script\GameControl\CountUp.cs" />
     <Compile Include="Assets\Script\GameControl\FadeIn.cs" />
@@ -270,8 +270,8 @@
     <Compile Include="Assets\Script\GameControl\ScenesControl.cs" />
     <Compile Include="Assets\Script\Player.cs" />
     <Compile Include="Assets\Script\PosDirection.cs" />
+    <Compile Include="Assets\Script\PosTwo.cs" />
     <Compile Include="Assets\Script\ProjectControl.cs" />
-    <Compile Include="Assets\Script\RayIn.cs" />
     <Compile Include="Assets\Script\Store\CleanEnemy.cs" />
     <Compile Include="Assets\Script\Store\Defense.cs" />
     <Compile Include="Assets\Script\Store\EarthAddBlood.cs" />

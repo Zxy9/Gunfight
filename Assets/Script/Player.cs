@@ -16,7 +16,8 @@ public class Player : MonoBehaviour
     public int GunNumber=0;
     float CT;//计算射速
     public int UseBulletCount = 0;
-    public GameObject beam;
+    public GameObject LeftBeam;
+    public GameObject RightBeam;
     void Start()
     {
 
@@ -34,24 +35,51 @@ public class Player : MonoBehaviour
                 Debug.Log("menu");
                 GameUI.SetActive(!GameUI.activeSelf);
          }
+       
+        
+        
         if (ViveInput.GetPressEx(HandRole.RightHand, ControllerButton.Trigger) /*&& !GameUI.activeSelf*/)     //右手发射子弹
         {
             CT+=Time.deltaTime;
             if (CT >= RightGun[GunNumber].currentTime)
             {
-                RightGun[GunNumber].Shoot();
+                if (GunNumber == 1)
+                {
+                    RightBeam.SetActive(true);
+                    RightGun[GunNumber].GetComponent<RayIn>().BeamShoot();
+                }
+                else
+                {
+                    RightGun[GunNumber].Shoot();
+                }
                 UseBulletCount++;
                 CT =0;
             }
         }
-        if (ViveInput.GetPressEx(HandRole.LeftHand, ControllerButton.Trigger) /*&& !GameUI.activeSelf*/)     //左手发射子弹
+        if (ViveInput.GetPressUpEx(HandRole.RightHand, ControllerButton.Trigger) && GunNumber == 1)
+        {
+            RightBeam.SetActive(false);
+        }
+            if (ViveInput.GetPressEx(HandRole.LeftHand, ControllerButton.Trigger) /*&& !GameUI.activeSelf*/)     //左手发射子弹
         {
             CT += Time.deltaTime;
             if (CT >= LeftGun[GunNumber].currentTime)
             {
-                LeftGun[GunNumber].Shoot();
+                if (GunNumber == 1)
+                {
+                    LeftBeam.SetActive(true);
+                    LeftGun[GunNumber].GetComponent<RayIn>().BeamShoot();
+                }
+                else
+                {
+                    LeftGun[GunNumber].Shoot();
+                }
                 UseBulletCount++;
                 CT = 0;
+            }
+            if (ViveInput.GetPressUpEx(HandRole.LeftHand, ControllerButton.Trigger) && GunNumber == 1)
+            {
+                LeftBeam.SetActive(false);
             }
 
         }

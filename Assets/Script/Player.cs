@@ -16,6 +16,7 @@ public class Player : MonoBehaviour
     public int GunNumber=0;
     float CT;//计算射速
     public int UseBulletCount = 0;
+    public GameObject beam;
     void Start()
     {
 

@@ -61,6 +61,7 @@ public class Bullet : MonoBehaviour
     {
         yield return new WaitForSeconds(4);
         BulletPool.Instance.CollectObject(this.gameObject);
+        Debug.Log("我走了，别想我");
     }
 
 }

@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/MistRainTest 1.unity
-    guid: cf67a63fc7afec240a6e864993dd027a
+    path: Assets/Scenes/TrueScenes/dqcj.unity
+    guid: 9d8a6722e759a7540ab3f8d1cb90510d
+  - enabled: 1
+    path: Assets/Scenes/TrueScenes/yzcj.unity
+    guid: 5e74d4583e0c1f24797d66349d78c42f
   m_configObjects: {}

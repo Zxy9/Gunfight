@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using DG.Tweening;
 public class Bullet : MonoBehaviour
 {
     // Start is called before the first frame update
@@ -16,7 +16,7 @@ public class Bullet : MonoBehaviour
     float BoomTime=0;
     public GameObject HitEffect;//碰撞特效
     public AudioClip ExplosionClip;
-
+    
    
     void Start()
     {
@@ -32,10 +32,12 @@ public class Bullet : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-     
-        //rigidbody.velocity = transform.forward * speed;
-        this.transform.position += transform.forward * speed * Time.deltaTime;
 
+        //rigidbody.velocity = transform.forward * speed;
+
+       
+            this.transform.position += transform.forward * speed * Time.deltaTime;
+        
     }
     //public abstract void Create();
     public  void Create()

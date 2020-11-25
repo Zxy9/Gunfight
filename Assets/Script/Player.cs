@@ -18,6 +18,11 @@ public class Player : MonoBehaviour
     public GameObject LeftBeam;
     public GameObject RightBeam;
     public GameObject[] Audio;
+    public Animator BoxOpenAnimator;
+    public GameObject BoxUI;
+    public GameObject BoxOpen;
+    public GameObject BoxOn;
+
     void Start()
     {
         Isdie = false;
@@ -36,8 +41,20 @@ public class Player : MonoBehaviour
 
         if (ViveInput.GetPressDownEx(HandRole.RightHand, ControllerButton.Menu))     //右手menu控制武器箱动画
         {
-            Debug.Log("menu");
-            GameUI.SetActive(!GameUI.activeSelf);
+            if (!BoxUI.activeSelf)
+            {
+                BoxOn.SetActive(false);
+                BoxOpen.SetActive(true);
+                BoxOpenAnimator.SetBool("BoxOpen", true);
+                BoxUI.SetActive(true);
+            }
+            else {
+                BoxOpenAnimator.SetBool("BoxOpen", false);
+                BoxOn.SetActive(true);
+                BoxOpen.SetActive(false);
+                BoxUI.SetActive(false);
+            }
+            
         }
         if (ViveInput.GetPressDownEx(HandRole.RightHand, ControllerButton.Trigger)&&GunNumber==0)
         {

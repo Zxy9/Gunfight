@@ -267,7 +267,7 @@
     <Compile Include="Assets\Script\GameControl\LoadManager.cs" />
     <Compile Include="Assets\Script\GameControl\LoadingSlice.cs" />
     <Compile Include="Assets\Script\GameControl\Movie.cs" />
-    <Compile Include="Assets\Script\GameControl\ScenesControl.cs" />
+    <Compile Include="Assets\Script\GameControl\ScenceControl.cs" />
     <Compile Include="Assets\Script\Player.cs" />
     <Compile Include="Assets\Script\PosDirection.cs" />
     <Compile Include="Assets\Script\PosTwo.cs" />

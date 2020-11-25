@@ -20,13 +20,27 @@ public class magazine : MonoBehaviour
         
         if (other.transform.tag == "Hand")
         {
-            Debug.Log("222");
+            
             player.LeftGun[player.GunNumber].gameObject.SetActive(false);
             player.RightGun[player.GunNumber].gameObject.SetActive(false);
             player.GunNumber++;
             if (player.GunNumber >= player.LeftGun.Length)
             {
                 player.GunNumber = 0;
+            }
+            player.LeftGun[player.GunNumber].gameObject.SetActive(true);
+            player.RightGun[player.GunNumber].gameObject.SetActive(true);
+
+        }
+        if (other.transform.tag == "LeftHand")
+        {
+            
+            player.LeftGun[player.GunNumber].gameObject.SetActive(false);
+            player.RightGun[player.GunNumber].gameObject.SetActive(false);
+            player.GunNumber--;
+            if (player.GunNumber < player.LeftGun.Length)
+            {
+                player.GunNumber = 2;
             }
             player.LeftGun[player.GunNumber].gameObject.SetActive(true);
             player.RightGun[player.GunNumber].gameObject.SetActive(true);

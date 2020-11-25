@@ -97,7 +97,7 @@ MonoBehaviour:
   speed: 20
   hitflood: 0
   enemycollider: {fileID: 0}
-  bulletlable: 0
+  bulletlable: 3
   HitEffect: {fileID: 192552, guid: c7e9f38264df9af438839ee9c90e07c4, type: 3}
   ExplosionClip: {fileID: 8300000, guid: e49a8a34f479db846af1106a5fe97951, type: 3}
 --- !u!1 &8282843114586917874

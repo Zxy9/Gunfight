@@ -104,6 +104,10 @@ MonoBehaviour:
   MoveSpeed2: 2
   AttackPoint: {fileID: 6395498674801224243}
   lable: 1
+  BoomEffect: {fileID: 4799491565905739192, guid: a2da824612baa7a44bba41540cd03634,
+    type: 3}
+  BoomAudio: {fileID: 1967093396815634875, guid: 965699362eef9634bacb8f13ac51a286,
+    type: 3}
 --- !u!136 &87061435993344387
 CapsuleCollider:
   m_ObjectHideFlags: 0

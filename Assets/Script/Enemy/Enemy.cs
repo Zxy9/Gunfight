@@ -10,7 +10,8 @@ class Enemy : MonoBehaviour
     public GameObject AttackPoint;
     GameObject Earth;
     public  int lable=0;
-    
+    public GameObject BoomEffect;
+    public GameObject BoomAudio;
     
     // Start is called before the first frame update
     void Start()
@@ -23,7 +24,10 @@ class Enemy : MonoBehaviour
     {
         if (blood == 0)
         {
-            ProjectControl.Money++;
+            ProjectControl.EnemyKill++;
+            GameObject.Instantiate(BoomEffect, transform.position, transform.rotation);
+            GameObject.Instantiate(BoomAudio, transform.position, transform.rotation);
+            ProjectControl.Money+=50;
             Destroy(gameObject);
         }
     }

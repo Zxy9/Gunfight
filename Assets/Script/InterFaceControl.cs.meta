@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Script/InterFaceControl.cs.meta
+guid: 75caa4d412ace26498d2e14add824ab4
+=======
+guid: 7439cc9a247a46a459169353bf8dc13f
+>>>>>>> 61b198f2ef6e5cc0af88409628df135990ec23d5:Assets/Script/GameControl/InterFaceControl.cs.meta
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

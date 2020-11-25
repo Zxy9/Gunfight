@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Script/InterFaceControl.cs.meta
+guid: c3fc7835fb8df514683480d17850387e
+=======
 guid: af84d158ca417d347ac514893fe3c818
+>>>>>>> e07d6f4ff0e699fa6972ee64eb5165cb56bdfbe2:Assets/Script/PosTwo.cs.meta
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2

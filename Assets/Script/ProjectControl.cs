@@ -8,10 +8,15 @@ public class ProjectControl : UnitySingle<ProjectControl>
 {
     // Start is called before the first frame update
     public Player player;
+<<<<<<< HEAD
+    public GameObject VictoryInterface;
+    public GameObject FailInterface;
+=======
 
     //public GameObject VictoryInterface;
 
     //public GameObject FailInterface;
+>>>>>>> e07d6f4ff0e699fa6972ee64eb5165cb56bdfbe2
     public int EnemyCount=0;//现有敌人数量
     public static int EnemyKill = 0;//杀敌数
     public static int EnemyInCount=0;

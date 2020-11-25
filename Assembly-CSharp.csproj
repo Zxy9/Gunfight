@@ -264,6 +264,7 @@
     <Compile Include="Assets\Script\GameControl\CountUp.cs" />
     <Compile Include="Assets\Script\GameControl\FadeIn.cs" />
     <Compile Include="Assets\Script\GameControl\GameSetting.cs" />
+    <Compile Include="Assets\Script\GameControl\InterFaceControl.cs" />
     <Compile Include="Assets\Script\GameControl\LoadManager.cs" />
     <Compile Include="Assets\Script\GameControl\LoadingSlice.cs" />
     <Compile Include="Assets\Script\GameControl\Movie.cs" />
